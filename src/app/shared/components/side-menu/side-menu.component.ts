@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+import { MenuItem } from '../../interfaces/menu-item.interface';
+
+@Component({
+  selector: 'shared-side-menu',
+  templateUrl: './side-menu.component.html',
+  styles: ``,
+})
+export class SideMenuComponent {
+  public reactiveMenu: MenuItem[] = [
+    { title: 'Básicos', route: './reactive/basic' },
+    { title: 'Dinámicos', route: './reactive/dynamic' },
+    { title: 'Switchers', route: './reactive/switches' },
+  ];
+  public authMenu: MenuItem[] = [{ title: 'Registro', route: './auth' }];
+}
